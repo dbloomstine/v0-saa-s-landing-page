@@ -46,12 +46,17 @@ const plans = [
 ]
 
 export function Pricing() {
+  const cardGradients = ["border-gradient-1", "border-gradient-2", "border-gradient-1"]
+
   return (
-    <section id="pricing" className="py-24 md:py-32">
-      <div className="container mx-auto px-4 md:px-6">
+    <section id="pricing" className="relative py-24 md:py-32">
+      {/* Background gradient accents */}
+      <div className="absolute inset-0 bg-gradient-mesh opacity-10"></div>
+
+      <div className="container relative mx-auto px-4 md:px-6">
         <div className="mx-auto mb-16 max-w-2xl text-center">
           <h2 className="mb-4 text-balance text-3xl font-bold tracking-tight md:text-4xl lg:text-5xl">
-            Simple, transparent pricing
+            <span className="text-gradient-2">Simple, transparent</span> pricing
           </h2>
           <p className="text-pretty text-lg leading-relaxed text-muted-foreground">
             Choose the perfect plan for your team. All plans include a 14-day free trial.
@@ -62,24 +67,24 @@ export function Pricing() {
           {plans.map((plan, index) => (
             <Card
               key={index}
-              className={`relative flex flex-col ${
-                plan.popular ? "border-accent shadow-lg scale-105" : "border-border/50"
+              className={`relative flex flex-col ${cardGradients[index]} bg-card/80 backdrop-blur hover:shadow-2xl hover:shadow-primary/30 transition-all group ${
+                plan.popular ? "shadow-2xl shadow-primary/20 scale-105 hover:scale-110" : "hover:scale-105"
               }`}
             >
               {plan.popular && (
-                <div className="absolute -top-4 left-0 right-0 mx-auto w-fit rounded-full bg-accent px-4 py-1 text-sm font-medium text-accent-foreground">
+                <div className="absolute -top-4 left-0 right-0 mx-auto w-fit rounded-full bg-gradient-1 px-4 py-1 text-sm font-medium text-white shadow-lg shadow-primary/40">
                   Most Popular
                 </div>
               )}
               <CardHeader className="pb-8 pt-8">
-                <h3 className="mb-2 text-2xl font-bold">{plan.name}</h3>
+                <h3 className="mb-2 text-2xl font-bold text-gradient-1">{plan.name}</h3>
                 <p className="text-sm text-muted-foreground">{plan.description}</p>
                 <div className="mt-4">
                   {plan.price === "Custom" ? (
-                    <span className="text-4xl font-bold">Custom</span>
+                    <span className="text-4xl font-bold text-gradient-3">Custom</span>
                   ) : (
                     <>
-                      <span className="text-4xl font-bold">${plan.price}</span>
+                      <span className="text-4xl font-bold text-gradient-2">${plan.price}</span>
                       <span className="text-muted-foreground">/month</span>
                     </>
                   )}
@@ -89,14 +94,19 @@ export function Pricing() {
                 <ul className="space-y-3">
                   {plan.features.map((feature, i) => (
                     <li key={i} className="flex items-start gap-3">
-                      <Check className="mt-0.5 h-5 w-5 shrink-0 text-accent" />
+                      <div className="mt-0.5 h-5 w-5 shrink-0 rounded-full bg-gradient-1 flex items-center justify-center">
+                        <Check className="h-3 w-3 text-white" />
+                      </div>
                       <span className="text-sm leading-relaxed">{feature}</span>
                     </li>
                   ))}
                 </ul>
               </CardContent>
               <CardFooter>
-                <Button className="w-full" variant={plan.popular ? "default" : "outline"}>
+                <Button
+                  className={`w-full ${plan.popular ? "bg-gradient-1 shadow-lg shadow-primary/30 hover:shadow-xl hover:shadow-primary/50" : ""}`}
+                  variant={plan.popular ? "default" : "outline"}
+                >
                   {plan.cta}
                 </Button>
               </CardFooter>
