@@ -44,6 +44,12 @@ export function Header() {
             Pricing
           </Link>
           <Link
+            href="/pricing-estimator"
+            className="text-sm font-medium text-muted-foreground transition-colors hover:text-gradient-4"
+          >
+            Calculator
+          </Link>
+          <Link
             href="#contact"
             className="text-sm font-medium text-muted-foreground transition-colors hover:text-gradient-1"
           >
