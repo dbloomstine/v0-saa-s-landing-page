@@ -4,74 +4,94 @@
 @custom-variant dark (&:is(.dark *));
 
 :root {
-  --background: oklch(0.984 0.003 264);
-  --foreground: oklch(0.14 0.004 264);
+  --background: oklch(0.98 0.01 280);
+  --foreground: oklch(0.15 0.02 280);
   --card: oklch(1 0 0);
-  --card-foreground: oklch(0.14 0.004 264);
+  --card-foreground: oklch(0.15 0.02 280);
   --popover: oklch(1 0 0);
-  --popover-foreground: oklch(0.14 0.004 264);
-  --primary: oklch(0.14 0.004 264);
-  --primary-foreground: oklch(0.984 0.003 264);
-  --secondary: oklch(0.96 0.004 264);
-  --secondary-foreground: oklch(0.14 0.004 264);
-  --muted: oklch(0.96 0.004 264);
-  --muted-foreground: oklch(0.52 0.012 264);
-  --accent: oklch(0.42 0.015 264);
-  --accent-foreground: oklch(0.984 0.003 264);
-  --destructive: oklch(0.577 0.245 27.325);
-  --destructive-foreground: oklch(0.985 0 0);
-  --border: oklch(0.92 0.004 264);
-  --input: oklch(0.92 0.004 264);
-  --ring: oklch(0.42 0.015 264);
-  --chart-1: oklch(0.646 0.222 41.116);
-  --chart-2: oklch(0.6 0.118 184.704);
-  --chart-3: oklch(0.398 0.07 227.392);
-  --chart-4: oklch(0.828 0.189 84.429);
-  --chart-5: oklch(0.769 0.188 70.08);
+  --popover-foreground: oklch(0.15 0.02 280);
+  --primary: oklch(0.55 0.25 280);
+  --primary-foreground: oklch(0.99 0 0);
+  --secondary: oklch(0.60 0.22 340);
+  --secondary-foreground: oklch(0.99 0 0);
+  --muted: oklch(0.94 0.02 280);
+  --muted-foreground: oklch(0.50 0.05 280);
+  --accent: oklch(0.65 0.25 200);
+  --accent-foreground: oklch(0.99 0 0);
+  --destructive: oklch(0.60 0.28 25);
+  --destructive-foreground: oklch(0.99 0 0);
+  --border: oklch(0.88 0.04 280);
+  --input: oklch(0.88 0.04 280);
+  --ring: oklch(0.60 0.25 280);
+  --chart-1: oklch(0.65 0.28 330);
+  --chart-2: oklch(0.65 0.25 200);
+  --chart-3: oklch(0.60 0.25 280);
+  --chart-4: oklch(0.70 0.22 150);
+  --chart-5: oklch(0.65 0.26 40);
   --radius: 0.5rem;
-  --sidebar: oklch(0.984 0.003 264);
-  --sidebar-foreground: oklch(0.14 0.004 264);
-  --sidebar-primary: oklch(0.14 0.004 264);
-  --sidebar-primary-foreground: oklch(0.984 0.003 264);
-  --sidebar-accent: oklch(0.96 0.004 264);
-  --sidebar-accent-foreground: oklch(0.14 0.004 264);
-  --sidebar-border: oklch(0.92 0.004 264);
-  --sidebar-ring: oklch(0.42 0.015 264);
+  --sidebar: oklch(0.98 0.01 280);
+  --sidebar-foreground: oklch(0.15 0.02 280);
+  --sidebar-primary: oklch(0.55 0.25 280);
+  --sidebar-primary-foreground: oklch(0.99 0 0);
+  --sidebar-accent: oklch(0.94 0.02 280);
+  --sidebar-accent-foreground: oklch(0.15 0.02 280);
+  --sidebar-border: oklch(0.88 0.04 280);
+  --sidebar-ring: oklch(0.60 0.25 280);
+
+  /* Vibrant Gradient Colors */
+  --gradient-1-start: oklch(0.65 0.30 330);
+  --gradient-1-end: oklch(0.60 0.28 280);
+  --gradient-2-start: oklch(0.70 0.25 200);
+  --gradient-2-end: oklch(0.65 0.28 280);
+  --gradient-3-start: oklch(0.68 0.28 40);
+  --gradient-3-end: oklch(0.65 0.30 330);
+  --gradient-4-start: oklch(0.62 0.26 280);
+  --gradient-4-end: oklch(0.68 0.25 340);
 }
 
 .dark {
-  --background: oklch(0.14 0.004 264);
-  --foreground: oklch(0.984 0.003 264);
-  --card: oklch(0.18 0.004 264);
-  --card-foreground: oklch(0.984 0.003 264);
-  --popover: oklch(0.18 0.004 264);
-  --popover-foreground: oklch(0.984 0.003 264);
-  --primary: oklch(0.984 0.003 264);
-  --primary-foreground: oklch(0.14 0.004 264);
-  --secondary: oklch(0.26 0.004 264);
-  --secondary-foreground: oklch(0.984 0.003 264);
-  --muted: oklch(0.26 0.004 264);
-  --muted-foreground: oklch(0.65 0.012 264);
-  --accent: oklch(0.55 0.025 264);
-  --accent-foreground: oklch(0.984 0.003 264);
-  --destructive: oklch(0.396 0.141 25.723);
-  --destructive-foreground: oklch(0.637 0.237 25.331);
-  --border: oklch(0.26 0.004 264);
-  --input: oklch(0.26 0.004 264);
-  --ring: oklch(0.55 0.025 264);
-  --chart-1: oklch(0.488 0.243 264.376);
-  --chart-2: oklch(0.696 0.17 162.48);
-  --chart-3: oklch(0.769 0.188 70.08);
-  --chart-4: oklch(0.627 0.265 303.9);
-  --chart-5: oklch(0.645 0.246 16.439);
-  --sidebar: oklch(0.18 0.004 264);
-  --sidebar-foreground: oklch(0.984 0.003 264);
-  --sidebar-primary: oklch(0.55 0.025 264);
-  --sidebar-primary-foreground: oklch(0.984 0.003 264);
-  --sidebar-accent: oklch(0.26 0.004 264);
-  --sidebar-accent-foreground: oklch(0.984 0.003 264);
-  --sidebar-border: oklch(0.26 0.004 264);
-  --sidebar-ring: oklch(0.55 0.025 264);
+  --background: oklch(0.12 0.03 280);
+  --foreground: oklch(0.98 0.01 280);
+  --card: oklch(0.18 0.04 280);
+  --card-foreground: oklch(0.98 0.01 280);
+  --popover: oklch(0.18 0.04 280);
+  --popover-foreground: oklch(0.98 0.01 280);
+  --primary: oklch(0.65 0.28 280);
+  --primary-foreground: oklch(0.98 0.01 280);
+  --secondary: oklch(0.70 0.25 340);
+  --secondary-foreground: oklch(0.98 0.01 280);
+  --muted: oklch(0.25 0.04 280);
+  --muted-foreground: oklch(0.70 0.05 280);
+  --accent: oklch(0.70 0.28 200);
+  --accent-foreground: oklch(0.98 0.01 280);
+  --destructive: oklch(0.65 0.30 25);
+  --destructive-foreground: oklch(0.98 0.01 280);
+  --border: oklch(0.30 0.06 280);
+  --input: oklch(0.30 0.06 280);
+  --ring: oklch(0.65 0.28 280);
+  --chart-1: oklch(0.70 0.30 330);
+  --chart-2: oklch(0.70 0.28 200);
+  --chart-3: oklch(0.65 0.28 280);
+  --chart-4: oklch(0.75 0.25 150);
+  --chart-5: oklch(0.70 0.28 40);
+  --sidebar: oklch(0.18 0.04 280);
+  --sidebar-foreground: oklch(0.98 0.01 280);
+  --sidebar-primary: oklch(0.65 0.28 280);
+  --sidebar-primary-foreground: oklch(0.98 0.01 280);
+  --sidebar-accent: oklch(0.25 0.04 280);
+  --sidebar-accent-foreground: oklch(0.98 0.01 280);
+  --sidebar-border: oklch(0.30 0.06 280);
+  --sidebar-ring: oklch(0.65 0.28 280);
+
+  /* Vibrant Gradient Colors for Dark Mode */
+  --gradient-1-start: oklch(0.70 0.32 330);
+  --gradient-1-end: oklch(0.65 0.30 280);
+  --gradient-2-start: oklch(0.75 0.28 200);
+  --gradient-2-end: oklch(0.70 0.30 280);
+  --gradient-3-start: oklch(0.72 0.30 40);
+  --gradient-3-end: oklch(0.70 0.32 330);
+  --gradient-4-start: oklch(0.68 0.28 280);
+  --gradient-4-end: oklch(0.72 0.28 340);
 }
 
 @theme inline {
@@ -121,5 +141,61 @@
   }
   body {
     @apply bg-background text-foreground;
+  }
+}
+
+@layer utilities {
+  .bg-gradient-1 {
+    background: linear-gradient(135deg, var(--gradient-1-start), var(--gradient-1-end));
+  }
+  .bg-gradient-2 {
+    background: linear-gradient(135deg, var(--gradient-2-start), var(--gradient-2-end));
+  }
+  .bg-gradient-3 {
+    background: linear-gradient(135deg, var(--gradient-3-start), var(--gradient-3-end));
+  }
+  .bg-gradient-4 {
+    background: linear-gradient(135deg, var(--gradient-4-start), var(--gradient-4-end));
+  }
+  .bg-gradient-radial-1 {
+    background: radial-gradient(circle at top left, var(--gradient-1-start), var(--gradient-1-end));
+  }
+  .bg-gradient-radial-2 {
+    background: radial-gradient(circle at top right, var(--gradient-2-start), var(--gradient-2-end));
+  }
+  .bg-gradient-mesh {
+    background:
+      radial-gradient(at 0% 0%, var(--gradient-1-start) 0px, transparent 50%),
+      radial-gradient(at 100% 0%, var(--gradient-2-start) 0px, transparent 50%),
+      radial-gradient(at 100% 100%, var(--gradient-3-start) 0px, transparent 50%),
+      radial-gradient(at 0% 100%, var(--gradient-4-start) 0px, transparent 50%);
+  }
+  .text-gradient-1 {
+    background: linear-gradient(135deg, var(--gradient-1-start), var(--gradient-1-end));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .text-gradient-2 {
+    background: linear-gradient(135deg, var(--gradient-2-start), var(--gradient-2-end));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .text-gradient-3 {
+    background: linear-gradient(135deg, var(--gradient-3-start), var(--gradient-3-end));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .border-gradient-1 {
+    border: 2px solid transparent;
+    background: linear-gradient(var(--background), var(--background)) padding-box,
+                linear-gradient(135deg, var(--gradient-1-start), var(--gradient-1-end)) border-box;
+  }
+  .border-gradient-2 {
+    border: 2px solid transparent;
+    background: linear-gradient(var(--background), var(--background)) padding-box,
+                linear-gradient(135deg, var(--gradient-2-start), var(--gradient-2-end)) border-box;
   }
 }
