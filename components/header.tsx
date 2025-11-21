@@ -50,6 +50,12 @@ export function Header() {
             Calculator
           </Link>
           <Link
+            href="/articles"
+            className="text-sm font-medium text-muted-foreground transition-colors hover:text-gradient-2"
+          >
+            Articles
+          </Link>
+          <Link
             href="#contact"
             className="text-sm font-medium text-muted-foreground transition-colors hover:text-gradient-1"
           >
